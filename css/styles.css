@@ -629,12 +629,13 @@ border-radius: 2px;
 }
 .portfolio-div{
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .short-text{
 position: absolute;
 display:block;
-/* top:100%; */
+top:0;
+left: 0;
 width: 322px;
 height: 168px;
 font-family: Roboto;
@@ -651,11 +652,11 @@ transform: translate(0, 0);
 transition-property: all;
 transition-duration: 250ms;
 transition-timing-function:(0.4, 0, 0.2, 1);
+transform: translateY(100%);
 }
-
-.portfolio-div:hover{
-  transform: translate(0, -100%);
-} 
+.item-portfolio:hover .short-text{
+  transform: translateY(0%);
+}
 
 .portfolio-preview {
   padding-bottom: 94px;
